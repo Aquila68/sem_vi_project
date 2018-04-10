@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.project.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/et_login_user_id"
+        android:layout_width="220dp"
+        android:layout_height="60sp"
+        android:hint="Enter user id"
+
+        android:layout_alignLeft="@+id/et_login_password"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/et_login_password"
+        android:layout_marginTop="89dp"
+         />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="220dp"
+        android:layout_height="60sp"
+        android:layout_below="@+id/et_login_user_id"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="43dp"
+        android:hint="enter password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:onClick="doSubmit"
+        android:text="Submit" />
+
+    <Spinner
+        android:id="@+id/login_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp"
+        android:entries="@array/choices_array" />
+
+
+</RelativeLayout>

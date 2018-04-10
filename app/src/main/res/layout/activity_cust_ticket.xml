@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.project.CustTicketActivity">
+
+    <EditText
+        android:id="@+id/et_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:width="200dp"
+        android:hint="From" />
+
+    <TextView
+        android:id="@+id/tv_err_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_source"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/et_dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_err_source"
+        android:width="200dp"
+        android:layout_marginTop="40dp"
+        android:hint="To"/>
+
+    <TextView
+        android:id="@+id/tv_err_dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_dest"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_source"
+        android:layout_alignTop="@+id/tv_cost_display"
+        android:width="100dp" />
+
+    <TextView
+        android:id="@+id/tv_cost_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="212dp"
+        android:layout_toStartOf="@+id/tv_err_source"
+        android:text="Cost of ticket:" />
+
+    <TextView
+        android:id="@+id/tv_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_cost"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="180dp"
+        android:width="100dp" />
+
+    <TextView
+        android:id="@+id/tv_token_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/tv_token"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="100dp"
+        android:text="Token:" />
+
+    <Button
+        android:id="@+id/bt_token_gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_cost"
+        android:layout_marginTop="80dp"
+        android:text="Generate token"
+        android:onClick="genToken"/>
+
+</RelativeLayout>

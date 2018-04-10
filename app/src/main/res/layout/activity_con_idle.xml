@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.project.ConIdleActivity">
+
+
+    <Spinner
+        android:id="@+id/sp_bus_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"/>
+
+
+    <TextView
+        android:id="@+id/tvdebug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_bus_no"
+        tools:outlineProvider="bounds"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/bt_sell_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdebug"
+        android:text="Sell Ticket"
+        android:onClick="sellTicket"/>
+</RelativeLayout>

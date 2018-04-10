@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.project.LoginActivity">
+
+    <EditText
+        android:id="@+id/et_register_name"
+        android:layout_width="220dp"
+        android:layout_height="60sp"
+
+        android:layout_alignLeft="@+id/et_register_user_id"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/et_register_user_id"
+        android:layout_marginTop="30dp"
+        android:hint="Enter name" />
+
+
+    <EditText
+        android:id="@+id/et_register_user_id"
+        android:layout_width="220dp"
+        android:layout_height="60sp"
+
+        android:layout_above="@+id/et_register_password"
+        android:layout_alignLeft="@+id/et_register_password"
+        android:layout_alignStart="@+id/et_register_password"
+        android:layout_marginBottom="40dp"
+        android:hint="Enter user id" />
+
+
+    <EditText
+        android:id="@+id/et_register_password"
+        android:hint="enter password"
+        android:inputType="textPassword"
+
+        android:layout_width="220dp"
+        android:layout_height="60sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+         />
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/et_register_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_err_val_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:visibility="invisible"
+        android:text="Enter all details before pressing" />
+
+
+</RelativeLayout>
